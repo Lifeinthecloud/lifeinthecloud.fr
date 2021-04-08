@@ -6,5 +6,5 @@ bucket = "./public"
 entry-point = "workers-site"
 
 [env.production]
-name = "lifeinthecloud-website-production"
+name = "lifeinthecloud-website"
 route = "lifeinthecloud.fr/*"
