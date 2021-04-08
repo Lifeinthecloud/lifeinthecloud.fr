@@ -17,6 +17,7 @@ jobs:
       - name: Build
         run: |
           npm install
+          npm install -g gatsby-cli
           gatbsy build
       - name: Publish on cloudflare
         uses: cloudflare/wrangler-action@1.3.0
