@@ -17,7 +17,7 @@ jobs:
       - name: Npm install
         run: npm install
       - name: Configure wrangler
-        run:echo 'account_id = "${secrets.CF_ACCOUNT_ID}"' >> ~/wrangler.toml
+        run: echo 'account_id = "${secrets.CF_ACCOUNT_ID}"' >> ~/wrangler.toml
       - name: Publish on cloudflare
         uses: cloudflare/wrangler-action@1.3.0
         with:
