@@ -1,0 +1,20 @@
+ul.list-horizontal {
+  @include vendor('display', 'flex');
+  list-style: none;
+  //margin-top:5px;
+
+  li {
+    padding: 2rem 1.25rem 0 (1.25rem + _font(letter-spacing));
+
+    a {
+      border-bottom-color: transparent;
+      outline: none;
+    }
+  }
+}
+
+@include breakpoint(medium) {
+  ul.list-horizontal {
+    @include vendor('flex-direction', 'column');
+  }
+}

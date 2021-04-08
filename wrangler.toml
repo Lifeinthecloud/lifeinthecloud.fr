@@ -1,0 +1,9 @@
+name = "lifeinthecloud-website"
+type = "webpack"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
