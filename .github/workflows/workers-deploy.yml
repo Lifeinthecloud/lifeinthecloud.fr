@@ -12,10 +12,13 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v2
-      - name: Build Gatsby Site
-        uses: jzweifel/gatsby-cli-github-action@v1.0.0
-        with:
-          gatsby-arg: build
+      - name: Cache npm modules
+        uses: c-hive/gha-npm-cache@v1
+      - name: Build
+        run: |
+          npm install
+          npm i gatsby-cli
+          ./node_modules/.bin/gatbsy build
       - name: Publish on cloudflare
         uses: cloudflare/wrangler-action@1.3.0
         with:
