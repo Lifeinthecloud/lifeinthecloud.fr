@@ -7,6 +7,18 @@ on:
 
 jobs:
 
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: npm i @cloudflare/wrangler
+
+      - name: Publish to Cloudflare Workers Sites
+        run: |
+          echo 'account_id = "${secrets.CF_ACCOUNT_ID}"' >> ~/wrangler.toml
+          npm wrangler publish --env production
+
   deploy:
     runs-on: ubuntu-latest
     name: Deploy
@@ -16,6 +28,8 @@ jobs:
         uses: c-hive/gha-npm-cache@v1
       - name: Npm install
         run: npm install
+      - name: Configure wrangler
+        run:echo 'account_id = "${secrets.CF_ACCOUNT_ID}"' >> ~/wrangler.toml
       - name: Publish on cloudflare
         uses: cloudflare/wrangler-action@1.3.0
         with:
