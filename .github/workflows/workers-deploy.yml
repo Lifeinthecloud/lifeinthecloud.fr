@@ -12,10 +12,8 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v2
-      - name: Cache npm modules
-        uses: c-hive/gha-npm-cache@v1
       - name: Build Gatsby Site
-        uses: jzweifel/gatsby-cli-github-action@master
+        uses: jzweifel/gatsby-cli-github-action@v1.0.0
         with:
           gatsby-arg: build
       - name: Publish on cloudflare
