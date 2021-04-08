@@ -14,7 +14,7 @@ jobs:
         uses: c-hive/gha-npm-cache@v1
 
       - run: npm install
-      - run: npm i @cloudflare/wrangler -g
+      - run: npm i @cloudflare/wrangler
 
       - name: Publish to Cloudflare Workers Sites
         run: |
