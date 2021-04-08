@@ -14,11 +14,11 @@ jobs:
         uses: c-hive/gha-npm-cache@v1
 
       - run: npm install
+      - run: npm i @cloudflare/wrangler -g
 
       - name: Publish to Cloudflare Workers Sites
         run: |
-          echo "account_id = \"${secrets.CF_ACCOUNT_ID}\"" > ~/wrangler.toml
-          npm i @cloudflare/wrangler -g
+          echo 'account_id = "${secrets.CF_ACCOUNT_ID}"' >> ~/wrangler.toml
           npm wrangler publish --env production
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
