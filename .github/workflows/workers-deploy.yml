@@ -20,6 +20,7 @@ jobs:
 #          npm i gatsby-cli
 #          ./node_modules/.bin/gatsby build
       - run: npm install @cloudflare/wrangler
+      - run: ./node_modules/.bin/wrangler config --api-key ${{ secrets.CF_API_TOKEN }}
       - run: ./node_modules/.bin/wrangler whoami
       - name: Publish on cloudflare
         uses: cloudflare/wrangler-action@1.3.0
