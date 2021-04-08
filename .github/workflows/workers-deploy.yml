@@ -7,18 +7,6 @@ on:
 
 jobs:
 
-  compile:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - run: npm i @cloudflare/wrangler
-
-      - name: Publish to Cloudflare Workers Sites
-        run: |
-          echo 'account_id = "${secrets.CF_ACCOUNT_ID}"' >> ~/wrangler.toml
-          npm wrangler publish --env production
-
   deploy:
     runs-on: ubuntu-latest
     name: Deploy
