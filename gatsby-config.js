@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Life in the cloud',
+    title: 'Life in the cloud :)',
     author: 'Antoine Darche',
     description: 'Life in the cloud est une entreprise de développement logiciel sur-mesure.',
   },
