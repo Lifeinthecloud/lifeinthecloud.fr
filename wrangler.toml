@@ -1,11 +1,10 @@
+name = "lifeinthecloud-website"
 type = "webpack"
-workers_dev = false
 account_id = "f4f23e22f7e77a59462ef50a69cc232a"
+workers_dev = true
+route = ""
+zone_id = ""
 
 [site]
 bucket = "./public"
 entry-point = "workers-site"
-
-[env.production]
-name = "lifeinthecloud-website-production"
-route = "lifeinthecloud.fr/*"
