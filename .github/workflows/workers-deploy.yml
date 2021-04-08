@@ -9,13 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Cache node modules
-        uses: actions/cache@v2
+      - name: Cache npm modules
+        uses: c-hive/gha-npm-cache@v1
 
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
       - run: npm install
 
       - name: Publish to Cloudflare Workers Sites
