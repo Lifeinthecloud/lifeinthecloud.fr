@@ -1,26 +1,22 @@
 name: Deploy site to Cloudflare Workers
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  deploy-main:
-    if: ${{ github.ref == 'refs/heads/master' }}
-    runs-on: ubuntu-latest
 
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
     steps:
       - uses: actions/checkout@v2
-
       - name: Cache npm modules
         uses: c-hive/gha-npm-cache@v1
-
-      - run: npm install
-      - run: npm i @cloudflare/wrangler
-
-      - name: Publish to Cloudflare Workers Sites
-        run: |
-          echo 'account_id = "${secrets.CF_ACCOUNT_ID}"' >> ~/wrangler.toml
-          npm wrangler publish --env production
-        env:
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+      - name: Npm install
+        run: npm install
+      - name: Publish on cloudflare
+        uses: cloudflare/wrangler-action@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
