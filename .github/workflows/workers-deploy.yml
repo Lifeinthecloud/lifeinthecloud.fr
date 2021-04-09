@@ -17,6 +17,7 @@ jobs:
       - name: Install NPM modules
         run: |
           npm install
+          npm rebuild node-sass
           npm i gatsby-cli sass-loader
       - name: Publish on cloudflare
         uses: cloudflare/wrangler-action@master
