@@ -6,5 +6,5 @@ route = ""
 zone_id = ""
 
 [site]
-bucket = "./out"
+bucket = "public"
 entry-point = "workers-site"
