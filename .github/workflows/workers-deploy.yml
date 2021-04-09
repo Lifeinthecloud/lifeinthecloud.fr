@@ -12,8 +12,8 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v2
-#      - name: Use cache npm modules
-#        uses: c-hive/gha-npm-cache@v1
+      - name: Use cache npm modules
+        uses: c-hive/gha-npm-cache@v1
 #      - name: Build gatsby application
 #        run: |
 #          npm install
