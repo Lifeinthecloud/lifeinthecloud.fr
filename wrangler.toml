@@ -4,7 +4,6 @@ account_id = "f4f23e22f7e77a59462ef50a69cc232a"
 zone_id = "059d4d591f279820f7e516057c9de535"
 workers_dev = true
 route = ""
-zone_id = ""
 vars = { ENVIRONMENT = "dev" }
 
 [site]
