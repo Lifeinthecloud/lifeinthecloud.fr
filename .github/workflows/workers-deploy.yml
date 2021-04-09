@@ -22,4 +22,6 @@ jobs:
             npm install
             npm rebuild node-sass
             npm i gatsby-cli sass-loader
+            cat wrangler.toml
+            printenv
             ./node_modules/.bin/gatsby build
