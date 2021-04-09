@@ -13,4 +13,3 @@ entry-point = "workers-site"
 [env.production]
 name = "lifeinthecloud-website"
 vars = { ENVIRONMENT = "production" }
-routes = "lifeinthecloud.fr/*"
