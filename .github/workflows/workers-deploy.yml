@@ -26,6 +26,7 @@ jobs:
         uses: cloudflare/wrangler-action@master
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          environment: 'production'
 #          preCommands: |
 #            wrangler whoami
 #            echo "Run before wrangler publish"
