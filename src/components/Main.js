@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic02 from '../images/pic02.jpg'
 import pic_antoine_darche from '../images/antoine_darche.jpeg'
 import pic_intro from '../images/intro.png'
 import pic_service from '../images/service.png'
@@ -11,11 +10,11 @@ class Main extends React.Component {
   render() {
     let close = (
       <div
-        className="close"
-        onClick={() => {
-          this.props.onCloseArticle()
-        }}
-      ></div>
+  className="close"
+  onClick={() => {
+    this.props.onCloseArticle()
+  }}
+  />
     )
 
     return (
@@ -31,7 +30,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <span className="image">
+          <span className="image main">
             <img src={pic_intro} alt="" />
           </span>
           <h2 className="major">Intro</h2>
@@ -53,7 +52,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <span className="image">
+          <span className="image main">
             <img src={pic_service} alt="" />
           </span>
           <h2 className="major">Service</h2>
@@ -154,7 +153,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <span className="image">
+          <span className="image main">
             <img src={pic_about} alt="" />
           </span>
           <h2 className="major">About</h2>
@@ -196,8 +195,8 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <span className="image">
-            <img src={pic_contact} alt="" width="" />
+          <span className="image main">
+            <img src={pic_contact}  alt="" width="" />
           </span>
           <h2 className="major">Contact</h2>
 
@@ -218,6 +217,7 @@ class Main extends React.Component {
                       href="https://www.linkedin.com/in/antoine-darche-a2a93b88"
                       target="_blank"
                       className="icon fa-linkedin"
+                      rel="noreferrer"
                     >
                       <span className="label">Linkedin</span>
                     </a>
@@ -227,6 +227,7 @@ class Main extends React.Component {
                       href="https://github.com/Ecureuilvirtuel"
                       target="_blank"
                       className="icon fa-github"
+                      rel="noreferrer"
                     >
                       <span className="label">GitHub</span>
                     </a>
@@ -236,6 +237,7 @@ class Main extends React.Component {
                       href="https://twitter.com/Ecureuilvirtuel"
                       target="_blank"
                       className="icon fa-twitter"
+                      rel="noreferrer"
                     >
                       <span className="label">Twitter</span>
                     </a>
@@ -244,10 +246,10 @@ class Main extends React.Component {
               </div>
             </div>
             <div class="col-half">
-                <img src={pic_antoine_darche} alt="Photo de Antoine Darche" />
+                <img src={pic_antoine_darche} alt="Antoine Darche" />
             </div>
           </div>
-          <div class="clear-col"></div>
+          <div class="clear-col"/>
           {close}
         </article>
       </div>

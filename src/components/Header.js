@@ -20,25 +20,25 @@ import pic_logo_docker from '../images/technologies/logo-docker.png'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-code"></span>
+      <span className="icon fa-code"/>
     </div>
     <div className="content">
       <div className="inner">
         <h1>Life in the cloud</h1>
         <p>
-          <strong>Développement applicatif sur-mesure</strong>{' '}
+          <strong>- Développement applicatif sur-mesure -</strong>{' '}
           <br />
-          pour gérer vos informations de demain{' '}
+          pour <u>gérer</u> vos informations de demain{' '}
         </p>
         <p>
-          <strong>Référencement web (SEO)</strong>{' '}
+          <strong>- Audit Système -</strong>{' '}
           <br />
-          pour déployer votre image de demain
+          pour <u>optimiser</u> votre évolution de demain
         </p>
         <p>
-          <strong>Audit Système</strong>{' '}
+          <strong>- Référencement web (SEO) -</strong>{' '}
           <br />
-          pour optimiser votre évolution de demain
+          pour <u>déployer</u> votre image de demain
         </p>
       </div>
     </div>
@@ -87,27 +87,27 @@ const Header = props => (
 
     <ul class="customers list-horizontal">
       <li>
-        <a href="https://www.solocal.com/" title="Découvrir Solocal" target="_blank">
+        <a href="https://www.solocal.com/" title="Découvrir Solocal" target="_blank" rel="noreferrer">
           <img src={pic_logo_solocal} alt="" height="50" />
         </a>
       </li>
       <li>
-        <a href="https://vpauto.fr/" title="Découvrir VPauto" target="_blank">
+        <a href="https://vpauto.fr/" title="Découvrir VPauto" target="_blank" rel="noreferrer">
           <img src={pic_logo_vpauto} alt="" height="55" />
         </a>
       </li>
       <li>
-        <a href="https://www.casden.fr/" title="Découvrir Casden" target="_blank">
+        <a href="https://www.casden.fr/" title="Découvrir Casden" target="_blank" rel="noreferrer">
           <img src={pic_logo_casden} alt="" height="75" />
         </a>
       </li>
       <li>
-        <a href="https://www.airbus.com/" title="Découvrir Airbus" target="_blank">
+        <a href="https://www.airbus.com/" title="Découvrir Airbus" target="_blank" rel="noreferrer">
           <img src={pic_logo_airbus} alt="" height="40" />
         </a>
       </li>
       <li>
-        <a href="https://www.orange.fr/" title="Découvrir Orange" target="_blank">
+        <a href="https://www.orange.fr/" title="Découvrir Orange" target="_blank" rel="noreferrer">
           <img src={pic_logo_orange} alt="" height="60" />
         </a>
       </li>
@@ -117,34 +117,34 @@ const Header = props => (
 
     <ul class="technologies list-horizontal">
       <li>
-        <a href="https://www.php.net/" title="Découvrir PHP 8" target="_blank">
+        <a href="https://www.php.net/" title="Découvrir PHP 8" target="_blank" rel="noreferrer">
           <img src={pic_logo_php} alt="" height="75" />
         </a>
       </li>
       <li>
-        <a href="https://symfony.com/" title="Découvrir Symfony" target="_blank">
+        <a href="https://symfony.com/" title="Découvrir Symfony" target="_blank" rel="noreferrer">
           <img src={pic_logo_symfony} alt="" height="65" />
         </a>
       </li>
       <li>
-        <a href="https://api-platform.com/" title="Découvrir API Plateform" target="_blank">
+        <a href="https://api-platform.com/" title="Découvrir API Plateform" target="_blank" rel="noreferrer">
           <img src={pic_logo_apip} alt="" height="75" />
         </a>
       </li>
     </ul>
     <ul class="technologies list-horizontal list-other">
       <li>
-        <a href="https://www.gatsbyjs.com/" title="Découvrir Gatsby" target="_blank">
+        <a href="https://www.gatsbyjs.com/" title="Découvrir Gatsby" target="_blank" rel="noreferrer">
           <img src={pic_logo_gatsby} alt="" height="60" />
         </a>
       </li>
       <li>
-        <a href="https://fr.reactjs.org/" title="Découvrir React" target="_blank">
+        <a href="https://fr.reactjs.org/" title="Découvrir React" target="_blank" rel="noreferrer">
           <img src={pic_logo_react} alt="" height="75" />
         </a>
       </li>
       <li>
-        <a href="https://vuejs.org/" title="Découvrir Vue.js" target="_blank">
+        <a href="https://vuejs.org/" title="Découvrir Vue.js" target="_blank" rel="noreferrer">
           <img src={pic_logo_vuejs} alt="" height="75" />
         </a>
       </li>
@@ -153,17 +153,17 @@ const Header = props => (
     <h2>Logiciels & protocoles</h2>
     <ul class="environnements list-horizontal">
       <li>
-        <a href="https://www.docker.com/" title="Découvrir Docker" target="_blank">
+        <a href="https://www.docker.com/" title="Découvrir Docker" target="_blank" rel="noreferrer">
           <img src={pic_logo_docker} alt="" height="50" />
         </a>
       </li>
       <li>
-        <a href="https://graphql.org/" title="Découvrir GraphQL" target="_blank">
+        <a href="https://graphql.org/" title="Découvrir GraphQL" target="_blank" rel="noreferrer">
           <img src={pic_logo_graphql} alt="" height="50" />
         </a>
       </li>
       <li>
-        <a href="https://kubernetes.io/fr/" title="Découvrir Kubernetes" target="_blank">
+        <a href="https://kubernetes.io/fr/" title="Découvrir Kubernetes" target="_blank" rel="noreferrer">
           <img src={pic_logo_k8s} alt="" height="50" />
         </a>
       </li>
@@ -172,12 +172,12 @@ const Header = props => (
     <h2>Environnements</h2>
     <ul className="environnements list-horizontal">
       <li>
-        <a href="https://cloud.google.com/" title="Découvrir Google Cloud Platform" target="_blank">
+        <a href="https://cloud.google.com/" title="Découvrir Google Cloud Platform" target="_blank" rel="noreferrer">
           <img src={pic_logo_gcp} alt="" height="45" />
         </a>
       </li>
       <li>
-        <a href="https://azure.microsoft.com/fr-fr/" title="Découvrir Microsoft Azure" target="_blank">
+        <a href="https://azure.microsoft.com/fr-fr/" title="Découvrir Microsoft Azure" target="_blank" rel="noreferrer">
           <img src={pic_logo_azure} alt="" height="50" />
         </a>
       </li>
