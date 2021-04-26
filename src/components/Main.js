@@ -5,6 +5,17 @@ import pic_intro from '../images/intro.png'
 import pic_service from '../images/service.png'
 import pic_about from '../images/about.png'
 import pic_contact from '../images/contact.png'
+import pic_logo_symfony from '../images/technologies/logo-symfony.png'
+import pic_logo_k8s from '../images/technologies/logo-kubernetes.png'
+import pic_logo_gcp from '../images/technologies/logo-google-cloud-plateform.png'
+import pic_logo_azure from '../images/technologies/logo-microsoft-azure.png'
+import pic_logo_php from '../images/technologies/logo-php8.webp'
+import pic_logo_apip from '../images/technologies/logo-api-platform.png'
+import pic_logo_gatsby from '../images/technologies/logo-gatsby.png'
+import pic_logo_react from '../images/technologies/logo-react.png'
+import pic_logo_vuejs from '../images/technologies/logo-vuejs.png'
+import pic_logo_graphql from '../images/technologies/logo-graphql.png'
+import pic_logo_docker from '../images/technologies/logo-docker.png'
 
 class Main extends React.Component {
   render() {
@@ -43,6 +54,79 @@ class Main extends React.Component {
             <p>
               Créé en 2016, Life in the cloud est une entreprise qui accompagne les entreprises dans leur transformation numérique.
             </p>
+            <div>
+              <h3>Technologies</h3>
+
+              <ul className="technologies list-horizontal">
+                <li>
+                  <a href="https://www.php.net/" title="Découvrir PHP 8" target="_blank" rel="noreferrer">
+                    <img src={pic_logo_php} alt="" height="55"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://symfony.com/" title="Découvrir Symfony" target="_blank" rel="noreferrer">
+                    <img src={pic_logo_symfony} alt="" height="45"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api-platform.com/" title="Découvrir API Plateform" target="_blank" rel="noreferrer">
+                    <img src={pic_logo_apip} alt="" height="55"/>
+                  </a>
+                </li>
+              </ul>
+              <ul className="technologies list-horizontal list-other">
+                <li>
+                  <a href="https://www.gatsbyjs.com/" title="Découvrir Gatsby" target="_blank" rel="noreferrer">
+                    <img src={pic_logo_gatsby} alt="" height="40"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://fr.reactjs.org/" title="Découvrir React" target="_blank" rel="noreferrer">
+                    <img src={pic_logo_react} alt="" height="55"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vuejs.org/" title="Découvrir Vue.js" target="_blank" rel="noreferrer">
+                    <img src={pic_logo_vuejs} alt="" height="55"/>
+                  </a>
+                </li>
+              </ul>
+
+              <h3>Logiciels & protocoles</h3>
+              <ul className="softwares list-horizontal">
+                <li>
+                  <a href="https://www.docker.com/" title="Découvrir Docker" target="_blank" rel="noreferrer">
+                    <img src={pic_logo_docker} alt="" height="30"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://graphql.org/" title="Découvrir GraphQL" target="_blank" rel="noreferrer">
+                    <img src={pic_logo_graphql} alt="" height="30"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://kubernetes.io/fr/" title="Découvrir Kubernetes" target="_blank" rel="noreferrer">
+                    <img src={pic_logo_k8s} alt="" height="30"/>
+                  </a>
+                </li>
+              </ul>
+
+              <h3>Environnements</h3>
+              <ul className="environnements list-horizontal">
+                <li>
+                  <a href="https://cloud.google.com/" title="Découvrir Google Cloud Platform" target="_blank"
+                     rel="noreferrer">
+                    <img src={pic_logo_gcp} alt="" height="20"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://azure.microsoft.com/fr-fr/" title="Découvrir Microsoft Azure" target="_blank"
+                     rel="noreferrer">
+                    <img src={pic_logo_azure} alt="" height="30"/>
+                  </a>
+                </li>
+              </ul>
+            </div>
             {close}
           </div>
         </article>
