@@ -30,19 +30,21 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <span className="image main">
+          <div className="image main">
             <img src={pic_intro} alt="" />
-          </span>
-          <h2 className="major">Intro</h2>
-          <p>
-            Les organisations en croissance, d'aujourd'hui, investissent constamment dans leur système d'informations.
-            Que ce soit pour le fonctionnement interne, la recherche et développement, l'image ou bien la sécurité,
-            les projets numériques sont sources d'une évolution attractive positive.
-          </p>
-          <p>
-            Créé en 2016, Life in the cloud est une entreprise qui accompagne les entreprises dans leur transformation numérique.
-          </p>
-          {close}
+          </div>
+          <div className="article-content">
+            <h2 className="major">Intro</h2>
+            <p>
+              Les organisations en croissance, d'aujourd'hui, investissent constamment dans leur système d'informations.
+              Que ce soit pour le fonctionnement interne, la recherche et développement, l'image ou bien la sécurité,
+              les projets numériques sont sources d'une évolution attractive positive.
+            </p>
+            <p>
+              Créé en 2016, Life in the cloud est une entreprise qui accompagne les entreprises dans leur transformation numérique.
+            </p>
+            {close}
+          </div>
         </article>
 
         <article
@@ -52,9 +54,9 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <span className="image main">
+          <div className="image main">
             <img src={pic_service} alt="" />
-          </span>
+          </div>
           <h2 className="major">Service</h2>
 
           <p>
@@ -153,9 +155,9 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <span className="image main">
+          <div className="image main">
             <img src={pic_about} alt="" />
-          </span>
+          </div>
           <h2 className="major">About</h2>
 
           <ul>
@@ -195,9 +197,9 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <span className="image main">
+          <div className="image main">
             <img src={pic_contact}  alt="" width="" />
-          </span>
+          </div>
           <h2 className="major">Contact</h2>
 
           <div class="profil">
