@@ -14,52 +14,45 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>Life in the cloud</h1>
-        <p>
-          <strong>- Développement applicatif sur-mesure -</strong>{' '}
-          <br />
-          pour <u>gérer</u> vos informations de demain{' '}
-        </p>
-        <p>
-          <strong>- Audit Système -</strong>{' '}
-          <br />
-          pour <u>optimiser</u> votre évolution de demain
-        </p>
-        <p>
-          <strong>- Référencement web (SEO) -</strong>{' '}
-          <br />
-          pour <u>déployer</u> votre image de demain
-        </p>
-      </div>
-      <div>
-        <h3>Clients</h3>
 
-        <ul className="customers list-horizontal">
-          <li>
-            <a href="https://www.solocal.com/" title="Découvrir Solocal" target="_blank" rel="noreferrer">
-              <img src={pic_logo_solocal} alt="" height="30"/>
-            </a>
-          </li>
-          <li>
-            <a href="https://vpauto.fr/" title="Découvrir VPauto" target="_blank" rel="noreferrer">
-              <img src={pic_logo_vpauto} alt="" height="30"/>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.casden.fr/" title="Découvrir Casden" target="_blank" rel="noreferrer">
-              <img src={pic_logo_casden} alt="" height="40"/>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.airbus.com/" title="Découvrir Airbus" target="_blank" rel="noreferrer">
-              <img src={pic_logo_airbus} alt="" height="20"/>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.orange.fr/" title="Découvrir Orange" target="_blank" rel="noreferrer">
-              <img src={pic_logo_orange} alt="" height="35"/>
-            </a>
-          </li>
-        </ul>
+        <p>
+          <strong>- Services -</strong>
+          <br />
+          Lead, Développement, Audit, Référencemcent
+        </p>
+
+        <p>
+          <strong>- Clients -</strong>
+
+          <ul className="customers list-horizontal">
+            <li>
+              <a href="https://www.solocal.com/" title="Découvrir Solocal" target="_blank" rel="noreferrer">
+                <img src={pic_logo_solocal} alt="" height="30"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://vpauto.fr/" title="Découvrir VPauto" target="_blank" rel="noreferrer">
+                <img src={pic_logo_vpauto} alt="" height="30"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.casden.fr/" title="Découvrir Casden" target="_blank" rel="noreferrer">
+                <img src={pic_logo_casden} alt="" height="40"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.airbus.com/" title="Découvrir Airbus" target="_blank" rel="noreferrer">
+                <img src={pic_logo_airbus} alt="" height="20"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.orange.fr/" title="Découvrir Orange" target="_blank" rel="noreferrer">
+                <img src={pic_logo_orange} alt="" height="35"/>
+              </a>
+            </li>
+          </ul>
+
+        </p>
       </div>
     </div>
     <nav>
@@ -78,20 +71,20 @@ const Header = props => (
           <button
             onClick={() => {
               window.scrollTo({top: 0, behavior: "smooth"})
-              props.onOpenArticle('service')
+              props.onOpenArticle('lead')
             }}
           >
-            Service
+            Tech lead
           </button>
         </li>
         <li>
           <button
             onClick={() => {
               window.scrollTo({top: 0, behavior: "smooth"})
-              props.onOpenArticle('about')
+              props.onOpenArticle('service')
             }}
           >
-            About
+            Service
           </button>
         </li>
         <li>

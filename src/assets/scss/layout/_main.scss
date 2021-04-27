@@ -93,7 +93,35 @@
 		}
 
     ul.technologies, ul.softwares, ul.environnements {
-      text-align: center;
+      background: #481B7B;
+      opacity: 0.4;
+      border-radius: _size(border-radius);
+      min-height: 70px;
+
+      li {
+        margin-top:0;
+        padding-top:10px;
+
+        a.symfony > img {
+          margin-top:8px;
+        }
+        a.gatsby > img {
+          margin-top:9px;
+        }
+        a.gcp > img {
+          margin-top:6px;
+        }
+        a.react > img {
+          margin-top:2px;
+        }
+        a.graphQl > img {
+          margin-top:2px;
+        }
+      }
+    }
+
+    ul.softwares, ul.environnements {
+      padding-top:10px;
     }
 
 		@include breakpoint(small) {
@@ -192,5 +220,18 @@
     color: #ffffff;
     font-weight: 600;
     line-height: 1.5;
+  }
+
+  .profil {
+    .identity {
+      .photo-profil {
+        float:right;
+        margin-left:20px;
+      }
+
+      p {
+        text-align: right !important;
+      }
+    }
   }
 

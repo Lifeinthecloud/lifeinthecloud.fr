@@ -2,9 +2,10 @@ ul.list-horizontal {
   @include vendor('display', 'flex');
   list-style: none;
   //margin-top:5px;
+  margin-bottom:0;
 
   li {
-    padding: 2rem 1.25rem 0 (1.25rem + _font(letter-spacing));
+    padding: 0.5rem 1.25rem 0 (1.25rem + _font(letter-spacing));
 
     a {
       border-bottom-color: transparent;

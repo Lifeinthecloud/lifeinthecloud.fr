@@ -47,13 +47,36 @@ class Main extends React.Component {
           <div className="article-content">
             <h2 className="major">Intro</h2>
             <p>
-              Les organisations en croissance, d'aujourd'hui, investissent constamment dans leur système d'informations.
-              Que ce soit pour le fonctionnement interne, la recherche et développement, l'image ou bien la sécurité,
-              les projets numériques sont sources d'une évolution attractive positive.
+              Les organisations, en croissance, investissent constamment dans leur <strong>Système d'Informations</strong>.
+              Que ce soit pour le fonctionnement interne, l'image de l'entreprise, la recherche et développement, ou la sécurité,
+              les <strong>projets numériques</strong> sont sources d'une évolution attractive positive.
             </p>
             <p>
-              Créé en 2016, Life in the cloud est une entreprise qui accompagne les entreprises dans leur transformation numérique.
+              Créé en 2016, Life in the cloud est une entreprise qui accompagne les organisations dans leur transformation numérique.
             </p>
+
+            <p>
+              <strong>- Tech Lead -</strong>{' '}
+              <br />
+              pour <u>fluidifier</u> vos projets de demain{' '}
+            </p>
+            <p>
+              <strong>- Développement applicatif sur-mesure -</strong>{' '}
+              <br />
+              pour <u>gérer</u> vos informations de demain{' '}
+            </p>
+            <p>
+              <strong>- Audit Système -</strong>{' '}
+              <br />
+              pour <u>optimiser</u> votre évolution de demain
+            </p>
+            <p>
+              <strong>- Référencement web (SEO) -</strong>{' '}
+              <br />
+              pour <u>déployer</u> votre image de demain
+            </p>
+
+
             <div>
               <h3>Technologies</h3>
 
@@ -64,8 +87,8 @@ class Main extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <a href="https://symfony.com/" title="Découvrir Symfony" target="_blank" rel="noreferrer">
-                    <img src={pic_logo_symfony} alt="" height="45"/>
+                  <a href="https://symfony.com/" title="Découvrir Symfony" target="_blank" rel="noreferrer" className="symfony">
+                    <img src={pic_logo_symfony} alt="" height="40"/>
                   </a>
                 </li>
                 <li>
@@ -76,12 +99,12 @@ class Main extends React.Component {
               </ul>
               <ul className="technologies list-horizontal list-other">
                 <li>
-                  <a href="https://www.gatsbyjs.com/" title="Découvrir Gatsby" target="_blank" rel="noreferrer">
-                    <img src={pic_logo_gatsby} alt="" height="40"/>
+                  <a href="https://www.gatsbyjs.com/" title="Découvrir Gatsby" target="_blank" rel="noreferrer" className="gatsby">
+                    <img src={pic_logo_gatsby} alt="" height="35"/>
                   </a>
                 </li>
                 <li>
-                  <a href="https://fr.reactjs.org/" title="Découvrir React" target="_blank" rel="noreferrer">
+                  <a href="https://fr.reactjs.org/" title="Découvrir React" target="_blank" rel="noreferrer" className="react">
                     <img src={pic_logo_react} alt="" height="55"/>
                   </a>
                 </li>
@@ -96,17 +119,17 @@ class Main extends React.Component {
               <ul className="softwares list-horizontal">
                 <li>
                   <a href="https://www.docker.com/" title="Découvrir Docker" target="_blank" rel="noreferrer">
-                    <img src={pic_logo_docker} alt="" height="30"/>
+                    <img src={pic_logo_docker} alt="" height="32"/>
                   </a>
                 </li>
                 <li>
-                  <a href="https://graphql.org/" title="Découvrir GraphQL" target="_blank" rel="noreferrer">
-                    <img src={pic_logo_graphql} alt="" height="30"/>
+                  <a href="https://graphql.org/" title="Découvrir GraphQL" target="_blank" rel="noreferrer" className="graphQl">
+                    <img src={pic_logo_graphql} alt="" height="35"/>
                   </a>
                 </li>
                 <li>
                   <a href="https://kubernetes.io/fr/" title="Découvrir Kubernetes" target="_blank" rel="noreferrer">
-                    <img src={pic_logo_k8s} alt="" height="30"/>
+                    <img src={pic_logo_k8s} alt="" height="32"/>
                   </a>
                 </li>
               </ul>
@@ -115,8 +138,8 @@ class Main extends React.Component {
               <ul className="environnements list-horizontal">
                 <li>
                   <a href="https://cloud.google.com/" title="Découvrir Google Cloud Platform" target="_blank"
-                     rel="noreferrer">
-                    <img src={pic_logo_gcp} alt="" height="20"/>
+                     rel="noreferrer" className="gcp">
+                    <img src={pic_logo_gcp} alt="" height="25"/>
                   </a>
                 </li>
                 <li>
@@ -129,6 +152,28 @@ class Main extends React.Component {
             </div>
             {close}
           </div>
+        </article>
+
+        <article
+          id="lead"
+          className={`${this.props.article === 'lead' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <div className="image main">
+            <img src={pic_about} alt="" />
+          </div>
+          <h2 className="major">Tech Lead</h2>
+          <ul>
+            <li>Formateur</li>
+            <li>Expert</li>
+            <li>Coach</li>
+            <li>Facilitateur</li>
+          </ul>
+
+          <a href="https://blog.openclassrooms.com/2017/11/21/parole-dexpert-role-de-tech-lead-selon-damien-beaufils/">https://blog.openclassrooms.com/2017/11/21/parole-dexpert-role-de-tech-lead-selon-damien-beaufils/</a>
+          {close}
         </article>
 
         <article
@@ -233,48 +278,6 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <div className="image main">
-            <img src={pic_about} alt="" />
-          </div>
-          <h2 className="major">About</h2>
-
-          <ul>
-            <li>
-              <strong>1. Ecoute</strong>{' '}
-              Nous sommes à votre écoute et identifierons précisément vos besoins.
-            </li>
-            <li>
-              <strong>2. Analyse</strong>{' '}
-              Atteindre vos objectifs mise de côté est notre priorité.
-              Nous sommes force proposition et riche en connaissances.
-            </li>
-            <li>
-              <strong>3. Solution</strong>{' '}
-              Nous proposer la meilleur solution
-            </li>
-            <li>
-              <strong>4. Contractualisation</strong>{' '}
-              Nous proposer la meilleur solution
-            </li>
-            <li>
-              <strong>5. Exploitation</strong>{' '}
-              Nous proposer la meilleur solution
-            </li>
-            <li>
-              <strong>6. Service client</strong>{' '}
-              Nous proposer la meilleur solution
-            </li>
-          </ul>
-          {close}
-        </article>
-
-        <article
           id="contact"
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
@@ -287,10 +290,12 @@ class Main extends React.Component {
           <h2 className="major">Contact</h2>
 
           <div class="profil">
-            <div class="identity col-half">
+            <div class="identity">
+              <img src={pic_antoine_darche} alt="Antoine Darche" className="photo-profil" />
               <h3>Antoine Darche</h3>
               <div class="h5">
                 Expert PHP Freelance
+                <br />Tech Lead
                 <br />Co-fondateur & CTO Covinfo.fr
               </div>
               <p>
@@ -331,11 +336,38 @@ class Main extends React.Component {
                 </ul>
               </div>
             </div>
-            <div class="col-half">
-                <img src={pic_antoine_darche} alt="Antoine Darche" />
-            </div>
           </div>
           <div class="clear-col"/>
+
+          <hr />
+
+          <ul>
+            <li>
+              <strong>1. Ecoute</strong>{' '}
+              Nous sommes à votre écoute et identifierons précisément vos besoins.
+            </li>
+            <li>
+              <strong>2. Analyse</strong>{' '}
+              Atteindre vos objectifs mise de côté est notre priorité.
+              Nous sommes force proposition et riche en connaissances.
+            </li>
+            <li>
+              <strong>3. Solution</strong>{' '}
+              Nous proposer la meilleur solution
+            </li>
+            <li>
+              <strong>4. Contractualisation</strong>{' '}
+              Nous proposer la meilleur solution
+            </li>
+            <li>
+              <strong>5. Exploitation</strong>{' '}
+              Nous proposer la meilleur solution
+            </li>
+            <li>
+              <strong>6. Service client</strong>{' '}
+              Nous proposer la meilleur solution
+            </li>
+          </ul>
           {close}
         </article>
       </div>
