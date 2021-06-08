@@ -58,7 +58,7 @@ class Main extends React.Component {
             <p>
               <strong>- Tech Lead -</strong>{' '}
               <br />
-              pour <u>fluidifier</u> vos projets de demain{' '}
+              pour <u>mener</u> vos projets de demain{' '}
             </p>
             <p>
               <strong>- Développement applicatif sur-mesure -</strong>{' '}
