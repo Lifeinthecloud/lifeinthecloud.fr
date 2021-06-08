@@ -1,7 +1,7 @@
 name = "lifeinthecloud-website"
 type = "webpack"
-account_id = "f4f23e22f7e77a59462ef50a69cc232a"
-zone_id = "059d4d591f279820f7e516057c9de535"
+account_id = "5faa6e09ba87263c4c8bab2ba5cc720e"
+zone_id = "5f24f61abe6bca245c393fb542bab444"
 workers_dev = true
 route = ""
 vars = { ENVIRONMENT = "dev" }
